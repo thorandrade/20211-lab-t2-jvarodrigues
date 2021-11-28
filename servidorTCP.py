@@ -20,7 +20,6 @@ while 1 :
     
     if request.find("DEC") == 11:
         if request.find("AQ") == 23:
-            print "entrei aqui"
             arq = open('/tmp/20211-lab-t2-jvarodrigues/assets/boasvindasAQ.html', 'r')
             for i in arq.readlines():
                 socketConexao.send(i)
