@@ -28,7 +28,6 @@ while 1 :
             for i in arq.readlines():
                 socketConexao.send(i)
             arq.close()
-        print request.find('EC')
         elif request.find('EC') == 23:
             print 'entrei aqui'
             cabecalho = 'HTTP/DEC OK\nContent-Type: text/html\n\n'
@@ -37,6 +36,7 @@ while 1 :
             for i in arq.readlines():
                 socketConexao.send(i)
             arq.close()
+        print request.find('EC')
     elif request.find('1.1') == 11:
         cabecalho = 'HTTP/1.1 OK\nContent-Type: text/html\n\n'
         socketConexao.send (cabecalho.encode())
