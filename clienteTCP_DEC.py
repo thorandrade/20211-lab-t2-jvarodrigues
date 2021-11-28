@@ -19,15 +19,7 @@ cabecalho = socketCliente.recv(1024)
 
 print cabecalho
 
-arq = open('/tmp/boasvindas.html', 'w')
-
-while 1:
-    dados = socketCliente.recv(1024)
-    if not dados:
-        break
-    arq.write(dados)
-    
-arq.close()
+Content-Type: text/html\n\n
 
 socketCliente.close ()
 

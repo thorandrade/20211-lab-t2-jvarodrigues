@@ -19,14 +19,12 @@ print cabecalho
 
 arq = open('/tmp/boasvindas.html', 'w')
 
-while 1:
-    dados = socketCliente.recv(1024)
-    if not dados:
-        break
-    arq.write(dados)
+dados = cabecalho.split('Content-Type: text/html\n\n')][1]
+
+arq.write(dados)
     
 arq.close()
 
 socketCliente.close ()
 
-os.system('xdg-open /tmp/boasvindas.html')
+#os.system('xdg-open /tmp/boasvindas.html')
