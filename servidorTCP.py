@@ -20,20 +20,18 @@ while 1 :
     
     if request.find("DEC") == 11:
         if request.find("AQ") == 25:
-            arq = open('/tmp/proxyDEC/assets/boasvindasAQ.html', 'r')
+            arq = open('/tmp/20211-lab-t2-jvarodrigues/assets/boasvindasAQ.html', 'r')
             for i in arq.readlines():
                 socketConexao.send(i)
             arq.close()
         if request.find("EC") == 25:
-            arq = open('/tmp/proxyDEC/assets/boasvindasEC.html', 'r')
+            arq = open('/tmp/20211-lab-t2-jvarodrigues/assets/boasvindasEC.html', 'r')
             for i in arq.readlines():
                 socketConexao.send(i)
             arq.close()
     elif request.find("1.1") == 11:
-        arq = open('/tmp/proxyDEC/assets/boasvindasUFS.html', 'r')
+        arq = open('/tmp/20211-lab-t2-jvarodrigues/assets/boasvindasUFS.html', 'r')
         for i in arq.readlines():
             socketConexao.send(i)
         arq.close()
-    else:
-        socketConexao.send ("Protocolo nao suportado")
     socketConexao.close ()
