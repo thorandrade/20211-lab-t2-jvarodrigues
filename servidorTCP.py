@@ -2,9 +2,11 @@ from socket import *
 
 portaServidor = 12000
 
+ipServidor = '192.0.2.10'
+
 socketServidor = socket (AF_INET, SOCK_STREAM)
 
-socketServidor.bind (('192.0.2.10', portaServidor))
+socketServidor.bind ((ipServidor, portaServidor))
 
 socketServidor.listen (1)
 
