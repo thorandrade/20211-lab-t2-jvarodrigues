@@ -27,4 +27,4 @@ arq.close()
 
 socketCliente.close ()
 
-#os.system('xdg-open /tmp/boasvindas.html')
+#os.system('xdg-open /tmp/boasvindas.html') nao funciona no core
