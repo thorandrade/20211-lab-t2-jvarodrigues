@@ -1,5 +1,4 @@
 import os
-import webbrowser
 from socket import *
 
 nomeServidor = '192.0.2.10'
@@ -7,7 +6,6 @@ nomeServidor = '192.0.2.10'
 portaServidor = 12000
 
 socketCliente = socket (AF_INET, SOCK_STREAM)
-
 
 socketCliente.connect ((nomeServidor, portaServidor))
 
