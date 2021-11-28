@@ -17,7 +17,7 @@ socketCliente.send (request.encode())
 
 print "Recebendo pagina de boas vindas"
 
-arq = open('/tmp/20211-lab-t2-jvarodrigues/assets/boasvindas.html', 'w')
+arq = open('/tmp/boasvindas.html', 'w')
 
 while 1:
     dados = socketCliente.recv(1024)
@@ -29,4 +29,4 @@ arq.close()
 
 socketCliente.close ()
 
-os.system("xdg-open /tmp/20211-lab-t2-jvarodrigues/assets/boasvindas.html")
+os.system('xdg-open /tmp/boasvindas.html')
