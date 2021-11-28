@@ -1,4 +1,5 @@
 import os
+import webbrowser
 from socket import *
 
 nomeServidor = '192.0.2.10'
@@ -29,4 +30,6 @@ arq.close()
 
 socketCliente.close ()
 
-os.system('xdg-open /tmp/boasvindas.html')
+webbrowser.open("http://www.google.com")
+
+#os.system('xdg-open /tmp/boasvindas.html')

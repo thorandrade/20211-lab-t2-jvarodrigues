@@ -8,7 +8,7 @@ socketServidor.bind (('192.0.2.10', portaServidor))
 
 socketServidor.listen (1)
 
-print "O servidor esta pronto para receber solicitacoes"
+print 'O servidor esta pronto para receber solicitacoes'
 
 while 1 :
 
@@ -18,18 +18,18 @@ while 1 :
 
     print request
     
-    if request.find("DEC") == 11:
-        if request.find("AQ") == 23:
+    if request.find('DEC') == 11:
+        if request.find('AQ') == 23:
             arq = open('/tmp/20211-lab-t2-jvarodrigues/assets/boasvindasAQ.html', 'r')
             for i in arq.readlines():
                 socketConexao.send(i)
             arq.close()
-        if request.find("EC") == 23:
+        if request.find('EC') == 23:
             arq = open('/tmp/20211-lab-t2-jvarodrigues/assets/boasvindasEC.html', 'r')
             for i in arq.readlines():
                 socketConexao.send(i)
             arq.close()
-    elif request.find("1.1") == 11:
+    elif request.find('1.1') == 11:
         arq = open('/tmp/20211-lab-t2-jvarodrigues/assets/boasvindasUFS.html', 'r')
         for i in arq.readlines():
             socketConexao.send(i)
