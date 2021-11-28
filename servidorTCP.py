@@ -4,7 +4,7 @@ portaServidor = 12000
 
 socketServidor = socket (AF_INET, SOCK_STREAM)
 
-socketServidor.bind (('', portaServidor))
+socketServidor.bind (('192.0.2.10', portaServidor))
 
 socketServidor.listen (1)
 
