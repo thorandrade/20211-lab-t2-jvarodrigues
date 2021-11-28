@@ -30,6 +30,4 @@ arq.close()
 
 socketCliente.close ()
 
-webbrowser.get('firefox').open("http://www.google.com")
-
-#os.system('xdg-open /tmp/boasvindas.html')
+os.system('xdg-open /tmp/boasvindas.html')
