@@ -27,6 +27,7 @@ while 1 :
                 socketConexao.send(i)
             arq.close()
         elif request.find('EC') == 23:
+            print 'entrei aqui'
             cabecalho = 'HTTP/DEC OK\nContent-Type: text/html\n\n'
             socketConexao.send (cabecalho.encode())
             arq = open('/tmp/20211-lab-t2-jvarodrigues/assets/boasvindasEC.html', 'r')
