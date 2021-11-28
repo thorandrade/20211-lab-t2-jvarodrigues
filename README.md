@@ -27,7 +27,7 @@ Se seu servidor receber mensagens sem a extensão do campo proposto, o servidor 
 > CURSO: VALORES
 
 ### Quais os possíveis valores de cada campo?
-> AQ e EC
+> ARQ e ENC
 
 ## Como a aplicação pode ser testada no Core?
 

@@ -21,22 +21,20 @@ while 1 :
     print request
     
     if request.find('DEC') == 11:
-        if request.find('AQ') == 23:
+        if request.find('ARQ') == 23:
             cabecalho = 'HTTP/DEC OK\nContent-Type: text/html\n\n'
             socketConexao.send (cabecalho.encode())
             arq = open('/tmp/20211-lab-t2-jvarodrigues/assets/boasvindasAQ.html', 'r')
             for i in arq.readlines():
                 socketConexao.send(i)
             arq.close()
-        elif request.find('EC') == 23:
-            print 'entrei aqui'
+        elif request.find('ENC') == 23:
             cabecalho = 'HTTP/DEC OK\nContent-Type: text/html\n\n'
             socketConexao.send (cabecalho.encode())
             arq = open('/tmp/20211-lab-t2-jvarodrigues/assets/boasvindasEC.html', 'r')
             for i in arq.readlines():
                 socketConexao.send(i)
             arq.close()
-        print request.find('EC')
     elif request.find('1.1') == 11:
         cabecalho = 'HTTP/1.1 OK\nContent-Type: text/html\n\n'
         socketConexao.send (cabecalho.encode())
