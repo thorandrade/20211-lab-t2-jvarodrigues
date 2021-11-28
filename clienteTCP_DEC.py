@@ -8,6 +8,7 @@ portaServidor = 12000
 
 socketCliente = socket (AF_INET, SOCK_STREAM)
 
+
 socketCliente.connect ((nomeServidor, portaServidor))
 
 curso = raw_input ('Informe o codigo do seu curso\n   AQ - Arquitetura\n   EC - Engenharia Civil\nQual o seu curso: ')

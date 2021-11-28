@@ -7,6 +7,7 @@ portaServidor = 12000
 
 socketCliente = socket (AF_INET, SOCK_STREAM)
 
+
 socketCliente.connect ((nomeServidor, portaServidor))
 
 request = "GET / HTTP/1.1\nHost: boasvindas.ufs \nAccept-Language: pt-br"
