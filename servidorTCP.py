@@ -1,4 +1,4 @@
-rom socket import *
+from socket import *
 
 portaServidor = 12000
 
