@@ -16,7 +16,9 @@ request = "GET / HTTP/DEC \nCurso: " + curso + "\nHost: boasvindas.ufs \nAccept-
 
 socketCliente.send (request.encode())
 
-print "Recebendo pagina de boas vindas"
+cabecalho = socketCliente.recv(1024)
+
+print cabecalho
 
 arq = open('/tmp/boasvindas.html', 'w')
 
