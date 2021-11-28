@@ -11,7 +11,7 @@ socketCliente.connect ((nomeServidor, portaServidor))
 
 curso = raw_input ('Informe o codigo do seu curso\n   AQ - Arquitetura\n   EC - Engenharia Civil\nQual o seu curso: ')
 
-request = 'GET / HTTP/DEC \nCurso: " + curso + "\nHost: boasvindas.ufs \nAccept-Language: pt-br'
+request = 'GET / HTTP/DEC \nCurso: ' + curso + '\nHost: boasvindas.ufs \nAccept-Language: pt-br'
 
 socketCliente.send (request.encode())
 
