@@ -19,7 +19,7 @@ print cabecalho
 
 arq = open('/tmp/boasvindas.html', 'w')
 
-dados = cabecalho.split('Content-Type: text/html\n\n')][1]
+dados = cabecalho.split('Content-Type: text/html\n\n')[1]
 
 arq.write(dados)
     

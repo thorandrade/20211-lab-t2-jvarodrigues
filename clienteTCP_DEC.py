@@ -19,7 +19,11 @@ cabecalho = socketCliente.recv(1024)
 
 print cabecalho
 
-Content-Type: text/html\n\n
+arq = open('/tmp/boasvindas.html', 'w')
+
+dados = cabecalho.split('Content-Type: text/html\n\n')[1]
+
+arq.write(dados)
 
 socketCliente.close ()
 
